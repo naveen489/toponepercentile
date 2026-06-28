@@ -2,7 +2,8 @@ backend:
   name: github
   repo: naveen489/toponepercentile
   branch: main
-  base_url: https://decap-cms-oauth-server.netlify.app
+  use_pkce: true
+  app_id: Ov23lieE3Kz9x6hDpmBG
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
