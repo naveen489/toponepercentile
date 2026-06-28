@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "title": "Empowering Students to Reach the Top One Percentile",
+    "subtitle": "Expert coaching for Board Exams, JEE, NEET, NTSE, and KVPY. We transform potential into performance.",
+    "cta_text": "Explore Our Programs",
+    "cta_url": "programs.html"
+  },
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Students Mentored"
+    },
+    {
+      "value": "99.9",
+      "label": "Highest Percentile"
+    },
+    {
+      "value": "50+",
+      "label": "Top 100 Ranks"
+    },
+    {
+      "value": "10+",
+      "label": "Years Experience"
+    }
+  ],
+  "why_choose_us": [
+    {
+      "icon": "🏆",
+      "title": "Proven Track Record",
+      "description": "Consistently producing top rankers in JEE, NEET, and Board Exams year after year."
+    },
+    {
+      "icon": "👨‍🏫",
+      "title": "Expert Faculty",
+      "description": "Learn from highly experienced educators who have themselves cracked top exams."
+    },
+    {
+      "icon": "🎯",
+      "title": "Personalized Attention",
+      "description": "Small batch sizes ensure every student gets individual focus and customized mentoring."
+    },
+    {
+      "icon": "📚",
+      "title": "Comprehensive Material",
+      "description": "Meticulously crafted study materials covering foundational concepts to advanced problem-solving."
+    },
+    {
+      "icon": "📝",
+      "title": "Regular Mock Tests",
+      "description": "Rigorous testing modeled on actual exam patterns with detailed performance analysis."
+    },
+    {
+      "icon": "💡",
+      "title": "Doubt Clearing Sessions",
+      "description": "Dedicated time to resolve every query, ensuring complete conceptual clarity."
+    },
+    {
+      "icon": "🤝",
+      "title": "Parent-Teacher Meets",
+      "description": "Regular interactions to keep parents updated on their child's progress and areas of improvement."
+    },
+    {
+      "icon": "🧠",
+      "title": "Strategic Planning",
+      "description": "We don't just teach subjects; we teach exam strategy, time management, and pressure handling."
+    }
+  ]
+}

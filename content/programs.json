@@ -1,0 +1,85 @@
+{
+  "programs": [
+    {
+      "id": "board",
+      "title": "Board Exam Preparation",
+      "icon": "📋",
+      "image": "",
+      "description": "Comprehensive coaching for Class 10 and Class 12 board examinations (CBSE/ICSE/State Boards). We ensure students not only score high in boards but also build a strong foundation for competitive exams. Our approach combines thorough NCERT coverage with regular mock tests modeled on actual board patterns.",
+      "eligibility": "Students of Class 9, 10, 11, and 12 preparing for board examinations.",
+      "features": [
+        {"icon": "📋", "title": "NCERT Mastery"},
+        {"icon": "📝", "title": "Board Pattern Mock Tests"},
+        {"icon": "✍️", "title": "Answer Writing Skills"},
+        {"icon": "📊", "title": "Previous Year Papers"},
+        {"icon": "🎯", "title": "Target Classes 9–12"},
+        {"icon": "👨‍👩‍👧", "title": "Parent Progress Reports"}
+      ],
+      "cta_text": "Enrol for Boards"
+    },
+    {
+      "id": "jee",
+      "title": "JEE Main & Advanced Preparation",
+      "icon": "🔬",
+      "image": "",
+      "description": "Rigorous and strategic coaching for JEE Main and JEE Advanced — India's most competitive engineering entrance exams. We cover Physics, Chemistry, and Mathematics with deep conceptual clarity, problem-solving techniques, and exam strategy built over years of experience.",
+      "eligibility": "Students of Class 11 and 12, and droppers targeting IIT/NIT admissions.",
+      "features": [
+        {"icon": "⚛️", "title": "Physics — Concept to Application"},
+        {"icon": "🧪", "title": "Chemistry — Organic/Inorganic/Physical"},
+        {"icon": "📐", "title": "Mathematics — Problem Solving"},
+        {"icon": "📝", "title": "Weekly Full-Syllabus Tests"},
+        {"icon": "🎯", "title": "JEE Advanced Strategy"},
+        {"icon": "💡", "title": "Doubt Clearing & Revision"}
+      ],
+      "cta_text": "Enrol for JEE"
+    },
+    {
+      "id": "neet",
+      "title": "NEET Preparation",
+      "icon": "🩺",
+      "image": "",
+      "description": "Comprehensive NEET preparation covering Biology (Botany & Zoology), Chemistry, and Physics. We place special emphasis on NCERT mastery since NEET questions are directly NCERT-based, alongside systematic practice of previous year questions and full-length mock tests.",
+      "eligibility": "Students of Class 11 and 12, and droppers targeting MBBS/BDS admissions.",
+      "features": [
+        {"icon": "🌿", "title": "Biology Botany & Zoology"},
+        {"icon": "🧪", "title": "Chemistry for NEET"},
+        {"icon": "⚛️", "title": "Physics for NEET"},
+        {"icon": "📚", "title": "NCERT Deep Dive"},
+        {"icon": "📝", "title": "Full-Length Mock Tests"},
+        {"icon": "🗂️", "title": "PYQ Practice (15 Years)"}
+      ],
+      "cta_text": "Enrol for NEET"
+    },
+    {
+      "id": "ntse",
+      "title": "NTSE Preparation",
+      "icon": "🏅",
+      "image": "",
+      "description": "Specialized coaching for the National Talent Search Examination — one of India's most prestigious scholarship exams for Class 10 students. We cover both the Mental Ability Test (MAT) and Scholastic Aptitude Test (SAT) with targeted practice and scholarship guidance.",
+      "eligibility": "Students of Class 9 and 10 appearing for NTSE Stage 1 and Stage 2.",
+      "features": [
+        {"icon": "🧠", "title": "MAT Preparation"},
+        {"icon": "📖", "title": "SAT Preparation"},
+        {"icon": "🏆", "title": "Scholarship Guidance"},
+        {"icon": "📝", "title": "Stage 1 & 2 Mock Tests"}
+      ],
+      "cta_text": "Enrol for NTSE"
+    },
+    {
+      "id": "kvpy",
+      "title": "KVPY / Foundation Program",
+      "icon": "🔭",
+      "image": "",
+      "description": "Our Foundation Program is designed for students from Class 8 to 10 who wish to build a strong academic foundation and develop scientific aptitude for future competitive exams. We also prepare students for KVPY and Science Olympiads.",
+      "eligibility": "Students of Class 8, 9, and 10 with an interest in science and competitive scholarships.",
+      "features": [
+        {"icon": "🔬", "title": "Scientific Aptitude"},
+        {"icon": "🏅", "title": "Olympiad Training"},
+        {"icon": "🔭", "title": "Research-Oriented Thinking"},
+        {"icon": "📐", "title": "Foundation Mathematics"}
+      ],
+      "cta_text": "Enrol for Foundation"
+    }
+  ]
+}

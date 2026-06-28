@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "name": "Arjun Sharma",
+      "exam": "JEE Advanced",
+      "year": "2023",
+      "rating": 5,
+      "review": "TOP Institute completely transformed my JEE preparation. The concept-based approach and personalized mentoring made all the difference. I cleared JEE Advanced in my first attempt and got into IIT!",
+      "photo": ""
+    },
+    {
+      "name": "Priya Nair",
+      "exam": "NEET",
+      "year": "2023",
+      "rating": 5,
+      "review": "The NEET preparation at TOP was exceptional. The NCERT focus and mock test series built my confidence. I scored 680/720 and secured admission to my dream medical college!",
+      "photo": ""
+    },
+    {
+      "name": "Rohan Gupta",
+      "exam": "NTSE",
+      "year": "2022",
+      "rating": 5,
+      "review": "I won the NTSE scholarship thanks to TOP. The MAT training was fantastic — I improved my logical reasoning dramatically in just 3 months. Highly recommend for Class 10 students!",
+      "photo": ""
+    },
+    {
+      "name": "Sneha Patel",
+      "exam": "Class 12 Boards (CBSE)",
+      "year": "2023",
+      "rating": 5,
+      "review": "I scored 97% in my boards while also preparing for JEE! The integrated approach at TOP ensured I didn't have to compromise on either. Thank you for the incredible support!",
+      "photo": ""
+    },
+    {
+      "name": "Karthik Menon",
+      "exam": "JEE Main",
+      "year": "2024",
+      "rating": 5,
+      "review": "The small batch size meant I got individual attention every class. My doubts were addressed immediately. The weekly tests really helped me track my progress and stay motivated.",
+      "photo": ""
+    }
+  ]
+}

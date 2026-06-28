@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <style>
     /* ── Page Hero ── */
     .faculty-page-hero {
@@ -293,36 +293,28 @@
             <!-- Faculty emoji / avatar -->
             <div style="position:relative;z-index:1;text-align:center;">
               <div style="font-size:6rem;line-height:1;animation:float 3s ease-in-out infinite;">👨‍🏫</div>
-              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.15);border-radius:0.75rem;padding:0.5rem 1rem;margin-top:0.75rem;color:rgba(255,255,255,0.9);font-size:0.85rem;font-weight:600;">
-                Lead Educator &amp; Founder
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.15);border-radius:0.75rem;padding:0.5rem 1rem;margin-top:0.75rem;color:rgba(255,255,255,0.9);font-size:0.85rem;font-weight:600;" id="faculty-photo-designation">
               </div>
             </div>
             <!-- Experience badge -->
-            <div class="faculty-exp-badge">⭐ 8+ Years</div>
+            <div class="faculty-exp-badge" id="faculty-exp-badge"></div>
           </div>
 
           <!-- Info body -->
           <div class="faculty-info-body">
-            <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:800;color:#0d1f3c;margin-bottom:0.25rem;">Faculty Name</h2>
-            <p style="color:#4e81cc;font-size:0.9rem;font-weight:600;margin-bottom:1rem;line-height:1.4;">Lead Educator &amp; Mentor | Founder, TOP Institute</p>
+            <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:800;color:#0d1f3c;margin-bottom:0.25rem;" id="faculty-name"></h2>
+            <p style="color:#4e81cc;font-size:0.9rem;font-weight:600;margin-bottom:1rem;line-height:1.4;" id="faculty-designation"></p>
 
             <!-- Qualification -->
             <div style="display:flex;align-items:center;gap:0.5rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.75rem;padding:0.625rem 1rem;margin-bottom:1.25rem;">
               <span style="font-size:1.1rem;">🎓</span>
-              <span style="font-size:0.875rem;color:#374151;font-weight:500;">B.Tech / M.Sc. (Please update via Admin)</span>
+              <span style="font-size:0.875rem;color:#374151;font-weight:500;" id="faculty-qualification"></span>
             </div>
 
             <!-- Expertise tags -->
             <div style="margin-bottom:1.5rem;">
               <p style="font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem;">Areas of Expertise</p>
-              <div style="display:flex;flex-wrap:wrap;margin:-0.25rem;">
-                <span class="expertise-tag">⚛️ Physics</span>
-                <span class="expertise-tag">📐 Mathematics</span>
-                <span class="expertise-tag">🧪 Chemistry</span>
-                <span class="expertise-tag">🔬 JEE Strategy</span>
-                <span class="expertise-tag">🩺 NEET Preparation</span>
-                <span class="expertise-tag">🏅 NTSE Coaching</span>
-                <span class="expertise-tag">📋 Board Exam Excellence</span>
+              <div style="display:flex;flex-wrap:wrap;margin:-0.25rem;" id="faculty-expertise">
               </div>
             </div>
 
@@ -340,18 +332,7 @@
         <!-- Biography Card -->
         <div class="detail-card reveal">
           <h3 class="detail-card-title"><span>📖</span> Biography</h3>
-          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
-            Welcome to Top One Percentile (TOP) — an institute built on the belief that every student carries within them the potential to achieve extraordinary results. I am the lead educator and founder of this institute, and my journey as a teacher has been driven by one simple yet powerful conviction: <em>great teaching transforms lives.</em>
-          </p>
-          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
-            With over 8 years of dedicated experience in coaching students for competitive examinations including JEE Main, JEE Advanced, NEET, NTSE, and Board Exams (CBSE/ICSE/State Boards), I have had the privilege of witnessing hundreds of students go from average performers to top achievers. My approach is rooted in <strong>conceptual clarity</strong>, a thorough understanding of exam patterns, and building genuine academic confidence in each student.
-          </p>
-          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
-            I founded TOP with the vision of creating an institute where students are not just given notes and told to memorize — but where they understand the <em>why</em> behind every concept. I design my classes to bridge the gap between school academics and competitive exam demands, ensuring students are equally strong in boards and entrance exams.
-          </p>
-          <p style="color:#374151;line-height:1.8;font-size:1rem;">
-            My teaching style is adaptive — I study each student's strengths, learning pace, and weaknesses, then tailor my guidance accordingly. I strongly believe in small batch sizes because every student deserves individual attention. Regular assessments, doubt-clearing sessions, and parent progress updates are the pillars of my teaching methodology. I am not just your tutor — I am your academic mentor, motivator, and guide throughout your journey.
-          </p>
+          <div id="faculty-bio-container" style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;"></div>
         </div>
 
         <!-- Teaching Philosophy Card (dark gradient) -->
@@ -363,46 +344,17 @@
               <h3 style="font-size:1.125rem;font-weight:700;color:#ddb448;">Teaching Philosophy</h3>
             </div>
             <div style="font-size:2.5rem;color:rgba(255,255,255,0.2);font-family:Georgia,serif;line-height:1;margin-bottom:0.5rem;">"</div>
-            <blockquote style="color:rgba(255,255,255,0.9);font-size:1.0625rem;line-height:1.8;font-style:italic;margin-bottom:0.75rem;">
-              Every student is capable of reaching the top one percentile. My role is not just to teach, but to discover each student's unique learning style and guide them with patience, precision, and passion. I don't measure success by ranks alone — I measure it by how deeply a student has grown in confidence, clarity, and character through their academic journey.
+            <blockquote style="color:rgba(255,255,255,0.9);font-size:1.0625rem;line-height:1.8;font-style:italic;margin-bottom:0.75rem;" id="faculty-philosophy">
             </blockquote>
             <div style="font-size:2.5rem;color:rgba(255,255,255,0.2);font-family:Georgia,serif;line-height:1;text-align:right;margin-top:-1rem;">"</div>
-            <p style="color:#ddb448;font-weight:700;font-size:0.9rem;margin-top:0.5rem;">— Faculty Name, Founder &amp; Lead Educator, TOP</p>
+            <p style="color:#ddb448;font-weight:700;font-size:0.9rem;margin-top:0.5rem;" id="faculty-philosophy-author"></p>
           </div>
         </div>
 
         <!-- Achievements Card -->
         <div class="detail-card reveal">
           <h3 class="detail-card-title"><span>🏆</span> Key Achievements</h3>
-          <div>
-            <div class="achievement-item">
-              <span class="achievement-star">★</span>
-              <div>
-                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">500+ Students Successfully Coached</p>
-                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Across JEE, NEET, NTSE, Board Exams, and Foundation programs since the institute's inception.</p>
-              </div>
-            </div>
-            <div class="achievement-item">
-              <span class="achievement-star">★</span>
-              <div>
-                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">Multiple JEE &amp; NEET Qualifiers Every Batch</p>
-                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">A consistent track record of producing JEE Main, JEE Advanced, and NEET qualifiers from every batch.</p>
-              </div>
-            </div>
-            <div class="achievement-item">
-              <span class="achievement-star">★</span>
-              <div>
-                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">Consistently High Board Exam Results</p>
-                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Students regularly scoring 90%+ in CBSE, ICSE, and State Board examinations with expert coaching.</p>
-              </div>
-            </div>
-            <div class="achievement-item">
-              <span class="achievement-star">★</span>
-              <div>
-                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">NTSE Scholarship Winners Mentored</p>
-                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Successfully guided students to clear both Stage 1 and Stage 2 of the National Talent Search Examination.</p>
-              </div>
-            </div>
+          <div id="faculty-achievements-container">
           </div>
         </div>
 
@@ -497,12 +449,12 @@
       <div>
         <h3 class="footer-heading">Contact Us</h3>
         <ul style="list-style:none;">
-          <li style="display:flex;gap:0.75rem;margin-bottom:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;margin-top:0.1rem;">📍</span><span>Please update your address via the Admin panel. City, State, PIN Code.</span></li>
-          <li style="margin-bottom:0.75rem;"><a href="tel:+917550022197" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">📞</span><span>+91 75500 22197</span></a></li>
-          <li style="margin-bottom:0.75rem;"><a href="mailto:toponepercentile@gmail.com" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">✉️</span><span>toponepercentile@gmail.com</span></a></li>
-          <li style="display:flex;gap:0.75rem;margin-bottom:1rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;">🕐</span><span>Monday to Saturday: 7:00 AM – 9:00 PM</span></li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;margin-top:0.1rem;">📍</span><span class="contact-address"></span></li>
+          <li style="margin-bottom:0.75rem;"><a href="" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'" class="contact-phone-link"><span style="color:#c9a84c;flex-shrink:0;">📞</span><span class="contact-phone"></span></a></li>
+          <li style="margin-bottom:0.75rem;"><a href="" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'" class="contact-email-link"><span style="color:#c9a84c;flex-shrink:0;">✉️</span><span class="contact-email"></span></a></li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;">🕐</span><span class="contact-hours"></span></li>
         </ul>
-        <a href="https://wa.me/917550022197" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;background:#16a34a;color:white;font-size:0.875rem;font-weight:600;padding:0.625rem 1rem;border-radius:0.5rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#15803d'" onmouseout="this.style.background='#16a34a'">
+        <a href="" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;background:#16a34a;color:white;font-size:0.875rem;font-weight:600;padding:0.625rem 1rem;border-radius:0.5rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#15803d'" onmouseout="this.style.background='#16a34a'" class="contact-wa-link">
           <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.848L.057 23.882l6.197-1.625A11.937 11.937 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.83 9.83 0 0 1-5.012-1.37l-.36-.213-3.68.965.982-3.585-.234-.371A9.846 9.846 0 0 1 2.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
           Chat on WhatsApp
         </a>
@@ -533,6 +485,6 @@
   @media (min-width: 1024px) { #footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.5fr; } }
 </style>
 
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>`n<script src="assets/js/content-renderer.js"></script>`n<script src="assets/js/main.js"></script>
 </body>
 </html>

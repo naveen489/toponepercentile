@@ -1,0 +1,168 @@
+backend:
+  name: github
+  repo: naveen489/toponepercentile
+  branch: main
+  base_url: https://decap-cms-oauth-server.netlify.app
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/homepage.json"
+        label: "Homepage Settings"
+        name: "homepage"
+        fields:
+          - {label: "Hero Section", name: "hero", widget: "object", fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "Subtitle", name: "subtitle", widget: "text"},
+              {label: "CTA Text", name: "cta_text", widget: "string"},
+              {label: "CTA URL", name: "cta_url", widget: "string"}
+            ]}
+          - {label: "Statistics", name: "stats", widget: "list", fields: [
+              {label: "Value", name: "value", widget: "string"},
+              {label: "Label", name: "label", widget: "string"}
+            ]}
+          - {label: "Why Choose Us Cards", name: "why_choose_us", widget: "list", fields: [
+              {label: "Icon (Emoji)", name: "icon", widget: "string"},
+              {label: "Title", name: "title", widget: "string"},
+              {label: "Description", name: "description", widget: "markdown", buttons: ["bold", "italic", "link"]}
+            ]}
+
+  - name: "about"
+    label: "About Section"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/about.json"
+        label: "About Settings"
+        name: "about"
+        fields:
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Mission", name: "mission", widget: "markdown"}
+          - {label: "Vision", name: "vision", widget: "markdown"}
+
+  - name: "programs"
+    label: "Programs"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/programs.json"
+        label: "Programs List"
+        name: "programs"
+        fields:
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            fields:
+              - {label: "ID (No spaces, lowercase)", name: "id", widget: "string"}
+              - {label: "Order", name: "order", widget: "number", value_type: "int", required: false}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon (Emoji)", name: "icon", widget: "string"}
+              - {label: "Banner Image", name: "image", widget: "image", required: false}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Eligibility", name: "eligibility", widget: "markdown"}
+              - {label: "Features", name: "features", widget: "list", fields: [
+                  {label: "Icon (Emoji)", name: "icon", widget: "string"},
+                  {label: "Title", name: "title", widget: "string"}
+                ]}
+              - {label: "CTA Text", name: "cta_text", widget: "string", default: "Enquire Now"}
+
+  - name: "faculty"
+    label: "Faculty Profile"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/faculty.json"
+        label: "Faculty Details"
+        name: "faculty"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Designation", name: "designation", widget: "string"}
+          - {label: "Qualification", name: "qualification", widget: "string"}
+          - {label: "Experience", name: "experience", widget: "string"}
+          - {label: "Photo", name: "photo", widget: "image", required: false}
+          - {label: "Expertise Tags", name: "expertise", widget: "list", field: {label: "Tag", name: "tag", widget: "string"}}
+          - {label: "Biography", name: "biography", widget: "markdown"}
+          - {label: "Teaching Philosophy", name: "philosophy", widget: "markdown"}
+          - {label: "Achievements", name: "achievements", widget: "list", field: {label: "Achievement", name: "item", widget: "markdown"}}
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/testimonials.json"
+        label: "Testimonials List"
+        name: "testimonials"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Order", name: "order", widget: "number", value_type: "int", required: false}
+              - {label: "Student Name", name: "name", widget: "string"}
+              - {label: "Exam / Batch", name: "exam", widget: "string"}
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Rating (1-5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, default: 5}
+              - {label: "Photo", name: "photo", widget: "image", required: false}
+              - {label: "Review", name: "review", widget: "markdown"}
+
+  - name: "faq"
+    label: "FAQ"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/faq.json"
+        label: "FAQ List"
+        name: "faqs"
+        fields:
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - {label: "Order", name: "order", widget: "number", value_type: "int", required: false}
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "markdown"}
+
+  - name: "contact"
+    label: "Contact Info"
+    folder: "content"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    files:
+      - file: "content/contact.json"
+        label: "Contact Info"
+        name: "contact"
+        fields:
+          - {label: "Address", name: "address", widget: "markdown"}
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "WhatsApp Number (Digits only with country code)", name: "whatsapp", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Working Hours", name: "working_hours", widget: "string"}
+          - {label: "Google Maps Embed URL", name: "map_url", widget: "string", required: false}

@@ -1,0 +1,24 @@
+{
+  "name": "Faculty Name",
+  "designation": "Lead Educator & Mentor | Founder, TOP Institute",
+  "qualification": "B.Tech / M.Sc. (Please update via Admin)",
+  "experience": "8+ Years",
+  "photo": "",
+  "expertise": [
+    "Physics",
+    "Mathematics",
+    "Chemistry",
+    "JEE Strategy",
+    "NEET Preparation",
+    "NTSE Coaching",
+    "Board Exam Excellence"
+  ],
+  "biography": "Every great journey begins with a strong foundation. For over a decade, I have dedicated myself to understanding the core challenges students face when preparing for competitive exams like JEE and NEET. My teaching methodology goes beyond rote memorization — it focuses on deep conceptual clarity, logical problem-solving, and building the intellectual stamina required to excel at the highest levels.\n\nI believe that every student has the potential to reach the top one percentile. My role is to help you discover that potential, hone your skills, and guide you with absolute precision.",
+  "philosophy": "Every student is capable of reaching the top one percentile. My role is not just to teach, but to discover each student's unique learning style and guide them with patience, precision, and passion.",
+  "achievements": [
+    "500+ students successfully coached and mentored",
+    "Multiple JEE Advanced & NEET qualifiers every batch",
+    "Consistently high board exam results (95%+ average)",
+    "NTSE and KVPY scholarship winners mentored"
+  ]
+}
