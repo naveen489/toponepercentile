@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Faculty — Top One Percentile | Meet Our Expert Educator</title>
+  <meta name="description" content="Meet the lead educator and mentor at Top One Percentile — 8+ years of experience in JEE, NEET, NTSE, Board Exams and competitive coaching. Dedicated to student excellence." />
+  <meta name="keywords" content="TOP faculty, JEE mentor, NEET teacher, coaching faculty, expert educator, competitive exam tutor" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Faculty — Top One Percentile" />
+  <meta property="og:description" content="Meet our expert educator with 8+ years of experience in JEE, NEET, NTSE and Board exam coaching." />
+  <link rel="canonical" href="faculty.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Page Hero ── */
+    .faculty-page-hero {
+      position: relative;
+      padding: 5rem 0 7rem;
+      background: linear-gradient(135deg, #1a3a6b 0%, #0d1f3c 100%);
+      overflow: hidden;
+      text-align: center;
+    }
+    .faculty-hero-orb1 {
+      position: absolute; top: -3rem; right: -3rem;
+      width: 18rem; height: 18rem; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.18), transparent);
+    }
+    .faculty-hero-orb2 {
+      position: absolute; bottom: -3rem; left: -3rem;
+      width: 14rem; height: 14rem; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.05), transparent);
+    }
+    .faculty-hero-ring {
+      position: absolute; top: 50%; right: 20%;
+      width: 8rem; height: 8rem; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.08);
+      transform: translateY(-50%);
+    }
+
+    /* ── Faculty Layout ── */
+    .faculty-main-section {
+      padding: 5rem 0 4rem;
+      background: linear-gradient(135deg, #f9fafb 0%, rgba(239,246,255,0.3) 100%);
+    }
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 1024px) {
+      .faculty-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+      }
+      .faculty-left-card {
+        position: sticky;
+        top: 6rem;
+      }
+    }
+
+    /* ── Left Card ── */
+    .faculty-left-card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 40px rgba(26,58,107,0.12);
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+    .faculty-photo-area {
+      position: relative;
+      height: 18rem;
+      background: linear-gradient(135deg, #1a3a6b 0%, #4e81cc 60%, #0d1f3c 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .faculty-exp-badge {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background: #c9a84c;
+      color: #0d1f3c;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 0.4rem 0.875rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(201,168,76,0.4);
+    }
+    .faculty-info-body {
+      padding: 1.5rem;
+    }
+    .expertise-tag {
+      display: inline-flex;
+      align-items: center;
+      background: #eef3fb;
+      color: #1a3a6b;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid #adc7eb;
+      margin: 0.25rem;
+      transition: all 0.2s ease;
+    }
+    .expertise-tag:hover {
+      background: #1a3a6b;
+      color: white;
+      border-color: #1a3a6b;
+    }
+
+    /* ── Right Detail Cards ── */
+    .detail-card {
+      background: white;
+      border-radius: 1.25rem;
+      padding: 2rem;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 24px rgba(26,58,107,0.06);
+      margin-bottom: 1.5rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .detail-card:hover {
+      box-shadow: 0 8px 40px rgba(26,58,107,0.12);
+    }
+    .detail-card-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    .detail-card-title span { font-size: 1.25rem; }
+
+    /* ── Philosophy Card ── */
+    .philosophy-card {
+      border-radius: 1.25rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1a3a6b 0%, #0d1f3c 100%);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    .philosophy-card-orb {
+      position: absolute; top: -2rem; right: -2rem;
+      width: 8rem; height: 8rem; border-radius: 50%;
+      background: rgba(201,168,76,0.15);
+    }
+
+    /* ── Achievement bullets ── */
+    .achievement-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .achievement-item:last-child { border-bottom: none; }
+    .achievement-star {
+      color: #c9a84c;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* ── CTA Strip ── */
+    .faculty-cta-strip {
+      padding: 4.5rem 0;
+      background: linear-gradient(135deg, #1a3a6b 0%, #0d1f3c 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .faculty-cta-orb {
+      position: absolute; top: 0; right: 0;
+      width: 14rem; height: 14rem; border-radius: 50%;
+      background: rgba(201,168,76,0.1);
+      transform: translate(50%, -50%);
+    }
+  </style>
+</head>
+<body style="font-family:'Inter',system-ui,sans-serif;">
+
+<!-- Announcement Bar -->
+<div id="announcement-bar" style="background:#1a3a6b;color:white;font-size:0.875rem;padding:0.5rem 0;overflow:hidden;position:relative;">
+  <div style="display:flex;align-items:center;">
+    <button onclick="this.parentNode.parentNode.remove()" style="position:absolute;right:1rem;z-index:10;background:none;border:none;color:rgba(255,255,255,0.7);cursor:pointer;font-size:1rem;" aria-label="Close">✕</button>
+    <div class="announcement-track" style="display:flex;white-space:nowrap;">
+      <span style="padding:0 2rem;">📢 Admissions Open for 2024–25 Batch! Limited Seats Available. <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Enquire Now →</a></span>
+      <span style="padding:0 2rem;">📢 Free Demo Class Every Saturday — Call to Register! <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Contact Us →</a></span>
+      <span style="padding:0 2rem;">📢 Admissions Open for 2024–25 Batch! Limited Seats Available. <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Enquire Now →</a></span>
+      <span style="padding:0 2rem;">📢 Free Demo Class Every Saturday — Call to Register! <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Contact Us →</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="main-nav" style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid #f3f4f6;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:5rem;">
+    <!-- Logo -->
+    <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+      <div style="width:2.5rem;height:2.5rem;border-radius:0.75rem;background:linear-gradient(135deg,#1a3a6b,#0d1f3c);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(26,58,107,0.3);">
+        <span style="color:white;font-weight:900;font-size:1.1rem;">T</span>
+      </div>
+      <div>
+        <div style="font-weight:900;color:#1a3a6b;font-size:1.1rem;line-height:1;">TOP</div>
+        <div style="font-size:0.625rem;color:#6b7280;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;line-height:1;">One Percentile</div>
+      </div>
+    </a>
+    <!-- Desktop Nav -->
+    <div style="display:none;" id="desktop-nav-links" class="desktop-only">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="faculty.html" class="nav-link nav-link-active">Faculty</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="btn-primary" style="margin-left:1rem;font-size:0.875rem;">Enquire Now</a>
+    </div>
+    <!-- Mobile Toggle -->
+    <button id="mobile-toggle" style="padding:0.5rem;border-radius:0.5rem;border:none;background:none;cursor:pointer;color:#4b5563;" aria-label="Toggle menu">
+      <svg class="icon-open" style="width:1.5rem;height:1.5rem;display:block;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg class="icon-close" style="width:1.5rem;height:1.5rem;display:none;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" style="display:none;background:white;border-top:1px solid #f3f4f6;">
+    <div class="container" style="padding-top:1rem;padding-bottom:1rem;">
+      <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+      <a href="programs.html" class="mobile-nav-link">📚 Programs</a>
+      <a href="faculty.html" class="mobile-nav-link" style="background:#eef3fb;color:#1a3a6b;font-weight:600;">👨‍🏫 Faculty</a>
+      <a href="reviews.html" class="mobile-nav-link">⭐ Reviews</a>
+      <a href="gallery.html" class="mobile-nav-link">🖼️ Gallery</a>
+      <a href="faq.html" class="mobile-nav-link">❓ FAQ</a>
+      <a href="contact.html" class="btn-primary" style="display:block;text-align:center;margin-top:0.75rem;">Enquire Now</a>
+    </div>
+  </div>
+</nav>
+<style>
+  @media (min-width: 1024px) {
+    #desktop-nav-links { display: flex !important; align-items: center; gap: 0.25rem; }
+    #mobile-toggle { display: none !important; }
+  }
+</style>
+
+<!-- Toast Container -->
+<div id="toast-container" style="position:fixed;top:6rem;right:1rem;z-index:9999;display:flex;flex-direction:column;gap:0.5rem;"></div>
+
+<!-- ── PAGE HERO ── -->
+<section class="faculty-page-hero">
+  <div class="faculty-hero-orb1"></div>
+  <div class="faculty-hero-orb2"></div>
+  <div class="faculty-hero-ring"></div>
+  <div class="container" style="position:relative;">
+    <div class="section-badge" style="display:inline-flex;background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:#ddb448;">👨‍🏫 Our Faculty</div>
+    <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:800;color:white;margin-bottom:1.25rem;line-height:1.15;">
+      Meet Our Expert<br><span style="color:#ddb448;">Educator</span>
+    </h1>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.0625rem;max-width:40rem;margin:0 auto;line-height:1.7;">
+      Dedicated, experienced, and passionate about transforming students into top achievers.
+    </p>
+  </div>
+  <!-- Wave divider -->
+  <div class="page-hero-wave">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:5rem;display:block;">
+      <path d="M0 80L1440 80L1440 30C1200 80 960 0 720 30C480 60 240 0 0 30L0 80Z" fill="#f9fafb"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ── FACULTY MAIN SECTION ── -->
+<section class="faculty-main-section">
+  <div class="container">
+    <div class="faculty-grid">
+
+      <!-- ── LEFT STICKY CARD ── -->
+      <div>
+        <div class="faculty-left-card reveal">
+          <!-- Photo Area -->
+          <div class="faculty-photo-area">
+            <!-- Decorative rings -->
+            <div style="position:absolute;inset:0;overflow:hidden;">
+              <div style="position:absolute;top:-1rem;left:-1rem;width:6rem;height:6rem;border-radius:50%;border:1px solid rgba(255,255,255,0.1);"></div>
+              <div style="position:absolute;bottom:-0.5rem;right:2rem;width:4rem;height:4rem;border-radius:50%;border:1px solid rgba(201,168,76,0.2);"></div>
+            </div>
+            <!-- Faculty emoji / avatar -->
+            <div style="position:relative;z-index:1;text-align:center;">
+              <div style="font-size:6rem;line-height:1;animation:float 3s ease-in-out infinite;">👨‍🏫</div>
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.15);border-radius:0.75rem;padding:0.5rem 1rem;margin-top:0.75rem;color:rgba(255,255,255,0.9);font-size:0.85rem;font-weight:600;">
+                Lead Educator &amp; Founder
+              </div>
+            </div>
+            <!-- Experience badge -->
+            <div class="faculty-exp-badge">⭐ 8+ Years</div>
+          </div>
+
+          <!-- Info body -->
+          <div class="faculty-info-body">
+            <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:800;color:#0d1f3c;margin-bottom:0.25rem;">Faculty Name</h2>
+            <p style="color:#4e81cc;font-size:0.9rem;font-weight:600;margin-bottom:1rem;line-height:1.4;">Lead Educator &amp; Mentor | Founder, TOP Institute</p>
+
+            <!-- Qualification -->
+            <div style="display:flex;align-items:center;gap:0.5rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.75rem;padding:0.625rem 1rem;margin-bottom:1.25rem;">
+              <span style="font-size:1.1rem;">🎓</span>
+              <span style="font-size:0.875rem;color:#374151;font-weight:500;">B.Tech / M.Sc. (Please update via Admin)</span>
+            </div>
+
+            <!-- Expertise tags -->
+            <div style="margin-bottom:1.5rem;">
+              <p style="font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem;">Areas of Expertise</p>
+              <div style="display:flex;flex-wrap:wrap;margin:-0.25rem;">
+                <span class="expertise-tag">⚛️ Physics</span>
+                <span class="expertise-tag">📐 Mathematics</span>
+                <span class="expertise-tag">🧪 Chemistry</span>
+                <span class="expertise-tag">🔬 JEE Strategy</span>
+                <span class="expertise-tag">🩺 NEET Preparation</span>
+                <span class="expertise-tag">🏅 NTSE Coaching</span>
+                <span class="expertise-tag">📋 Board Exam Excellence</span>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <a href="contact.html" class="btn-primary" style="width:100%;justify-content:center;">
+              📅 Book a Session
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT DETAIL COLUMNS ── -->
+      <div>
+
+        <!-- Biography Card -->
+        <div class="detail-card reveal">
+          <h3 class="detail-card-title"><span>📖</span> Biography</h3>
+          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
+            Welcome to Top One Percentile (TOP) — an institute built on the belief that every student carries within them the potential to achieve extraordinary results. I am the lead educator and founder of this institute, and my journey as a teacher has been driven by one simple yet powerful conviction: <em>great teaching transforms lives.</em>
+          </p>
+          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
+            With over 8 years of dedicated experience in coaching students for competitive examinations including JEE Main, JEE Advanced, NEET, NTSE, and Board Exams (CBSE/ICSE/State Boards), I have had the privilege of witnessing hundreds of students go from average performers to top achievers. My approach is rooted in <strong>conceptual clarity</strong>, a thorough understanding of exam patterns, and building genuine academic confidence in each student.
+          </p>
+          <p style="color:#374151;line-height:1.8;font-size:1rem;margin-bottom:1rem;">
+            I founded TOP with the vision of creating an institute where students are not just given notes and told to memorize — but where they understand the <em>why</em> behind every concept. I design my classes to bridge the gap between school academics and competitive exam demands, ensuring students are equally strong in boards and entrance exams.
+          </p>
+          <p style="color:#374151;line-height:1.8;font-size:1rem;">
+            My teaching style is adaptive — I study each student's strengths, learning pace, and weaknesses, then tailor my guidance accordingly. I strongly believe in small batch sizes because every student deserves individual attention. Regular assessments, doubt-clearing sessions, and parent progress updates are the pillars of my teaching methodology. I am not just your tutor — I am your academic mentor, motivator, and guide throughout your journey.
+          </p>
+        </div>
+
+        <!-- Teaching Philosophy Card (dark gradient) -->
+        <div class="philosophy-card reveal">
+          <div class="philosophy-card-orb"></div>
+          <div style="position:relative;z-index:1;">
+            <div style="display:flex;align-items:center;gap:0.625rem;margin-bottom:1.25rem;">
+              <span style="font-size:1.5rem;">💡</span>
+              <h3 style="font-size:1.125rem;font-weight:700;color:#ddb448;">Teaching Philosophy</h3>
+            </div>
+            <div style="font-size:2.5rem;color:rgba(255,255,255,0.2);font-family:Georgia,serif;line-height:1;margin-bottom:0.5rem;">"</div>
+            <blockquote style="color:rgba(255,255,255,0.9);font-size:1.0625rem;line-height:1.8;font-style:italic;margin-bottom:0.75rem;">
+              Every student is capable of reaching the top one percentile. My role is not just to teach, but to discover each student's unique learning style and guide them with patience, precision, and passion. I don't measure success by ranks alone — I measure it by how deeply a student has grown in confidence, clarity, and character through their academic journey.
+            </blockquote>
+            <div style="font-size:2.5rem;color:rgba(255,255,255,0.2);font-family:Georgia,serif;line-height:1;text-align:right;margin-top:-1rem;">"</div>
+            <p style="color:#ddb448;font-weight:700;font-size:0.9rem;margin-top:0.5rem;">— Faculty Name, Founder &amp; Lead Educator, TOP</p>
+          </div>
+        </div>
+
+        <!-- Achievements Card -->
+        <div class="detail-card reveal">
+          <h3 class="detail-card-title"><span>🏆</span> Key Achievements</h3>
+          <div>
+            <div class="achievement-item">
+              <span class="achievement-star">★</span>
+              <div>
+                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">500+ Students Successfully Coached</p>
+                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Across JEE, NEET, NTSE, Board Exams, and Foundation programs since the institute's inception.</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-star">★</span>
+              <div>
+                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">Multiple JEE &amp; NEET Qualifiers Every Batch</p>
+                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">A consistent track record of producing JEE Main, JEE Advanced, and NEET qualifiers from every batch.</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-star">★</span>
+              <div>
+                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">Consistently High Board Exam Results</p>
+                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Students regularly scoring 90%+ in CBSE, ICSE, and State Board examinations with expert coaching.</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-star">★</span>
+              <div>
+                <p style="font-size:0.95rem;font-weight:600;color:#0d1f3c;">NTSE Scholarship Winners Mentored</p>
+                <p style="font-size:0.8rem;color:#6b7280;margin-top:0.2rem;">Successfully guided students to clear both Stage 1 and Stage 2 of the National Talent Search Examination.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Card -->
+        <div class="detail-card reveal" style="margin-bottom:0;">
+          <h3 class="detail-card-title"><span>📜</span> Qualifications &amp; Certifications</h3>
+          <div style="background:linear-gradient(135deg,#f9fafb,#eef3fb);border-radius:0.75rem;padding:1.25rem;border:1px solid #e5e7eb;">
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <span style="font-size:1.5rem;flex-shrink:0;">🎓</span>
+              <div>
+                <p style="font-weight:600;color:#1a3a6b;font-size:0.9rem;margin-bottom:0.375rem;">Academic Background</p>
+                <p style="color:#6b7280;font-size:0.875rem;line-height:1.7;">B.Tech / M.Sc. in relevant Science stream. Please contact us or visit the institute to learn more about the complete credentials and academic background of our educator. We are happy to share details in person.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid #f3f4f6;display:flex;align-items:center;gap:0.625rem;color:#4b5563;font-size:0.875rem;">
+            <span style="font-size:1.1rem;">📞</span>
+            <span>For detailed credential verification, <a href="contact.html" style="color:#1a3a6b;font-weight:600;text-decoration:underline;">contact us directly</a>.</span>
+          </div>
+        </div>
+
+      </div><!-- end right column -->
+    </div><!-- end faculty-grid -->
+  </div><!-- end container -->
+</section>
+
+<!-- ── CTA STRIP ── -->
+<section class="faculty-cta-strip">
+  <div class="faculty-cta-orb"></div>
+  <div class="container" style="position:relative;">
+    <div style="font-size:3rem;margin-bottom:1rem;">🚀</div>
+    <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:800;color:white;margin-bottom:1rem;">
+      Learn Directly From the Expert
+    </h2>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.0625rem;max-width:38rem;margin:0 auto 2rem;line-height:1.7;">
+      Take the first step towards academic excellence. Book a free session with our lead educator and experience the TOP difference firsthand.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;">
+      <a href="contact.html" class="btn-gold" style="font-size:1rem;padding:1rem 2.25rem;">Enquire Now →</a>
+      <a href="programs.html" style="display:inline-flex;align-items:center;border:2px solid rgba(255,255,255,0.4);color:white;font-weight:600;padding:1rem 2rem;border-radius:0.75rem;transition:all 0.25s;font-size:1rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='transparent'">Browse Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer style="background:#0d1f3c;color:white;">
+  <div class="container" style="padding-top:4rem;padding-bottom:4rem;">
+    <div style="display:grid;grid-template-columns:1fr;gap:2.5rem;" id="footer-grid">
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;text-decoration:none;">
+          <div style="width:3rem;height:3rem;border-radius:0.75rem;background:linear-gradient(135deg,#c9a84c,#b08a30);display:flex;align-items:center;justify-content:center;">
+            <span style="color:#0d1f3c;font-weight:900;font-size:1.25rem;">T</span>
+          </div>
+          <div>
+            <div style="font-weight:900;font-size:1.25rem;color:white;">TOP</div>
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);font-weight:500;letter-spacing:0.08em;text-transform:uppercase;">Top One Percentile</div>
+          </div>
+        </a>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.875rem;line-height:1.7;margin-bottom:1.5rem;">Your One-Stop Destination for Academic Excellence.</p>
+        <div style="display:flex;gap:0.75rem;">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul style="list-style:none;">
+          <li style="margin-bottom:0.625rem;"><a href="index.html" class="footer-link">Home</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html" class="footer-link">Programs</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="faculty.html" class="footer-link">Faculty</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="reviews.html" class="footer-link">Alumni Reviews</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="faq.html" class="footer-link">FAQ</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Programs -->
+      <div>
+        <h3 class="footer-heading">Our Programs</h3>
+        <ul style="list-style:none;">
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#board" class="footer-link">Board Exam Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#jee" class="footer-link">JEE Main &amp; Advanced</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#neet" class="footer-link">NEET Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#ntse" class="footer-link">NTSE Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#kvpy" class="footer-link">KVPY / Foundation</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h3 class="footer-heading">Contact Us</h3>
+        <ul style="list-style:none;">
+          <li style="display:flex;gap:0.75rem;margin-bottom:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;margin-top:0.1rem;">📍</span><span>Please update your address via the Admin panel. City, State, PIN Code.</span></li>
+          <li style="margin-bottom:0.75rem;"><a href="tel:+917550022197" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">📞</span><span>+91 75500 22197</span></a></li>
+          <li style="margin-bottom:0.75rem;"><a href="mailto:toponepercentile@gmail.com" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">✉️</span><span>toponepercentile@gmail.com</span></a></li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;">🕐</span><span>Monday to Saturday: 7:00 AM – 9:00 PM</span></li>
+        </ul>
+        <a href="https://wa.me/917550022197" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;background:#16a34a;color:white;font-size:0.875rem;font-weight:600;padding:0.625rem 1rem;border-radius:0.5rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#15803d'" onmouseout="this.style.background='#16a34a'">
+          <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.848L.057 23.882l6.197-1.625A11.937 11.937 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.83 9.83 0 0 1-5.012-1.37l-.36-.213-3.68.965.982-3.585-.234-.371A9.846 9.846 0 0 1 2.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.08);">
+    <div class="container" style="padding-top:1.25rem;padding-bottom:1.25rem;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:0.75rem;">
+      <p style="color:rgba(255,255,255,0.4);font-size:0.875rem;">© 2025 Top One Percentile. All rights reserved.</p>
+      <p style="color:rgba(255,255,255,0.3);font-size:0.75rem;">Empowering students to reach the <span style="color:#c9a84c;font-weight:600;">Top One Percentile</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/917550022197" target="_blank" rel="noopener" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;width:3.5rem;height:3.5rem;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(22,163,74,0.4);transition:all 0.25s;" onmouseover="this.style.background='#15803d';this.style.transform='scale(1.1)'" onmouseout="this.style.background='#16a34a';this.style.transform='scale(1)'" aria-label="Chat on WhatsApp">
+  <svg style="width:1.75rem;height:1.75rem;" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.848L.057 23.882l6.197-1.625A11.937 11.937 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.83 9.83 0 0 1-5.012-1.37l-.36-.213-3.68.965.982-3.585-.234-.371A9.846 9.846 0 0 1 2.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+</a>
+
+<!-- Back to Top -->
+<button id="back-to-top" style="position:fixed;bottom:1.5rem;left:1.5rem;z-index:50;width:3rem;height:3rem;background:#1a3a6b;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(26,58,107,0.3);cursor:pointer;color:white;" aria-label="Back to top">
+  <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<!-- Footer responsive grid -->
+<style>
+  @media (min-width: 768px) { #footer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { #footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.5fr; } }
+</style>
+
+<script src="js/main.js"></script>
+</body>
+</html>

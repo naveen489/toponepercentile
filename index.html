@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Top One Percentile — Your One-Stop Destination for Academic Excellence</title>
+  <meta name="description" content="Top One Percentile (TOP) — Expert coaching for JEE, NEET, NTSE, KVPY and Board Exams. Personalized mentoring for academic excellence." />
+  <meta name="keywords" content="JEE coaching, NEET coaching, NTSE preparation, KVPY, board exam coaching, IIT JEE, TOP institute, competitive exam coaching" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Top One Percentile" />
+  <meta property="og:description" content="Expert coaching for JEE, NEET, NTSE, KVPY and Board Exams. Personalized mentoring for academic excellence." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Hero ── */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: linear-gradient(135deg, #1a3a6b 0%, #0d1f3c 60%, #0a1628 100%); }
+    .hero-orb1 { position: absolute; top: 5rem; right: 2.5rem; width: 18rem; height: 18rem; border-radius: 50%; background: radial-gradient(circle, #c9a84c, transparent); opacity: .10; }
+    .hero-orb2 { position: absolute; bottom: 5rem; left: 2.5rem; width: 24rem; height: 24rem; border-radius: 50%; background: radial-gradient(circle, #ffffff, transparent); opacity: .05; }
+    .hero-ring1 { position: absolute; top: 50%; left: 33%; width: 12rem; height: 12rem; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); animation: float 3s ease-in-out infinite; }
+    .hero-ring2 { position: absolute; top: 25%; right: 25%; width: 6rem; height: 6rem; border-radius: 50%; border: 1px solid rgba(221,180,72,0.2); animation: float 3s ease-in-out infinite; animation-delay: 1.5s; }
+    .hero-wave { position: absolute; bottom: 0; left: 0; right: 0; }
+    .hero-content { position: relative; width: 100%; max-width: 80rem; margin: 0 auto; padding: 6rem 1.5rem 8rem; display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+    @media (min-width: 1024px) { .hero-content { grid-template-columns: 1fr 1fr; padding: 8rem 2rem; } }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 0.5rem 1rem; margin-bottom: 1.5rem; }
+    .hero-badge-dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #ddb448; animation: pulse 2s ease-in-out infinite; }
+    .hero-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 800; line-height: 1.1; color: white; margin-bottom: 1.5rem; }
+    .hero-subtitle { font-size: 1.125rem; color: rgba(255,255,255,0.8); margin-bottom: 2.5rem; line-height: 1.7; max-width: 32rem; }
+    .hero-trust { margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    .hero-trust-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+    .hero-illustration { display: none; }
+    @media (min-width: 1024px) { .hero-illustration { display: flex; justify-content: center; align-items: center; position: relative; } }
+    .hero-card { position: relative; background: rgba(255,255,255,0.05); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; padding: 2rem; text-align: center; max-width: 26rem; animation: float 3s ease-in-out infinite; }
+    .hero-card::before { content: ''; position: absolute; inset: 0; background: rgba(201,168,76,0.1); border-radius: 1.5rem; filter: blur(2rem); scale: 1.1; z-index: -1; }
+    /* ── Sections ── */
+    .stats-section { padding: 4rem 0; background: white; }
+    .about-section { padding: 5rem 0; background: linear-gradient(135deg, #f9fafb 0%, rgba(239,246,255,0.3) 100%); }
+    .why-section { padding: 5rem 0; background: white; }
+    .programs-section { padding: 5rem 0; background: linear-gradient(135deg, #0d1f3c 0%, #1a3a6b 100%); position: relative; overflow: hidden; }
+    .programs-section-orb1 { position: absolute; top: 0; right: 0; width: 24rem; height: 24rem; border-radius: 50%; border: 2px solid rgba(255,255,255,0.05); transform: translate(50%, -50%); }
+    .programs-section-orb2 { position: absolute; bottom: 0; left: 0; width: 16rem; height: 16rem; border-radius: 50%; border: 2px solid rgba(201,168,76,0.05); transform: translate(-50%, 50%); }
+    .testi-section { padding: 5rem 0; background: #f9fafb; }
+    .cta-section { padding: 5rem 0; background: white; }
+    .cta-box { background: linear-gradient(135deg, #1a3a6b 0%, #0d1f3c 100%); border-radius: 1.5rem; padding: 3.5rem 2rem; position: relative; overflow: hidden; text-align: center; }
+    .cta-box-orb1 { position: absolute; top: 0; right: 0; width: 12rem; height: 12rem; background: rgba(201,168,76,0.1); border-radius: 50%; transform: translate(50%, -50%); }
+    .cta-box-orb2 { position: absolute; bottom: 0; left: 0; width: 8rem; height: 8rem; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-50%, 50%); }
+    /* Program card */
+    .prog-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); border-radius: 1rem; padding: 1.5rem; text-align: center; transition: all 0.3s ease; display: block; }
+    .prog-card:hover { background: rgba(255,255,255,0.15); border-color: rgba(201,168,76,0.5); transform: translateY(-4px); }
+    .about-img-placeholder { position: relative; background: linear-gradient(135deg, #eef3fb, #d5e3f5); border-radius: 1.5rem; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-card); }
+    .highlight-item { display: flex; align-items: center; gap: 0.75rem; background: white; border-radius: 0.75rem; padding: 0.75rem 1rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid #f3f4f6; transition: all 0.2s ease; }
+    .highlight-item:hover { border-color: var(--primary-200); box-shadow: var(--shadow-card); }
+  </style>
+</head>
+<body style="font-family:'Inter',system-ui,sans-serif;">
+
+<!-- Announcement Bar -->
+<div id="announcement-bar" style="background:#1a3a6b;color:white;font-size:0.875rem;padding:0.5rem 0;overflow:hidden;position:relative;">
+  <div style="display:flex;align-items:center;">
+    <button onclick="this.parentNode.parentNode.remove()" style="position:absolute;right:1rem;z-index:10;background:none;border:none;color:rgba(255,255,255,0.7);cursor:pointer;font-size:1rem;" aria-label="Close">✕</button>
+    <div class="announcement-track" style="display:flex;white-space:nowrap;">
+      <span style="padding:0 2rem;">📢 Admissions Open for 2024–25 Batch! Limited Seats Available. <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Enquire Now →</a></span>
+      <span style="padding:0 2rem;">📢 Free Demo Class Every Saturday — Call to Register! <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Contact Us →</a></span>
+      <span style="padding:0 2rem;">📢 Admissions Open for 2024–25 Batch! Limited Seats Available. <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Enquire Now →</a></span>
+      <span style="padding:0 2rem;">📢 Free Demo Class Every Saturday — Call to Register! <a href="contact.html" style="color:#ddb448;text-decoration:underline;margin-left:0.5rem;">Contact Us →</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="main-nav" style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid #f3f4f6;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:5rem;">
+    <!-- Logo -->
+    <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+      <div style="width:2.5rem;height:2.5rem;border-radius:0.75rem;background:linear-gradient(135deg,#1a3a6b,#0d1f3c);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(26,58,107,0.3);">
+        <span style="color:white;font-weight:900;font-size:1.1rem;">T</span>
+      </div>
+      <div>
+        <div style="font-weight:900;color:#1a3a6b;font-size:1.1rem;line-height:1;">TOP</div>
+        <div style="font-size:0.625rem;color:#6b7280;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;line-height:1;">One Percentile</div>
+      </div>
+    </a>
+    <!-- Desktop Nav -->
+    <div style="display:none;" id="desktop-nav-links" class="desktop-only">
+      <a href="index.html" class="nav-link nav-link-active">Home</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="faculty.html" class="nav-link">Faculty</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="btn-primary" style="margin-left:1rem;font-size:0.875rem;">Enquire Now</a>
+    </div>
+    <!-- Mobile Toggle -->
+    <button id="mobile-toggle" style="padding:0.5rem;border-radius:0.5rem;border:none;background:none;cursor:pointer;color:#4b5563;" aria-label="Toggle menu">
+      <svg class="icon-open" style="width:1.5rem;height:1.5rem;display:block;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg class="icon-close" style="width:1.5rem;height:1.5rem;display:none;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" style="display:none;background:white;border-top:1px solid #f3f4f6;">
+    <div class="container" style="padding-top:1rem;padding-bottom:1rem;">
+      <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+      <a href="programs.html" class="mobile-nav-link">📚 Programs</a>
+      <a href="faculty.html" class="mobile-nav-link">👨‍🏫 Faculty</a>
+      <a href="reviews.html" class="mobile-nav-link">⭐ Reviews</a>
+      <a href="gallery.html" class="mobile-nav-link">🖼️ Gallery</a>
+      <a href="faq.html" class="mobile-nav-link">❓ FAQ</a>
+      <a href="contact.html" class="btn-primary" style="display:block;text-align:center;margin-top:0.75rem;">Enquire Now</a>
+    </div>
+  </div>
+</nav>
+<style>
+  @media (min-width: 1024px) {
+    #desktop-nav-links { display: flex !important; align-items: center; gap: 0.25rem; }
+    #mobile-toggle { display: none !important; }
+  }
+</style>
+
+<!-- Toast Container -->
+<div id="toast-container" style="position:fixed;top:6rem;right:1rem;z-index:9999;display:flex;flex-direction:column;gap:0.5rem;"></div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-ring1"></div>
+  <div class="hero-ring2"></div>
+  <div class="hero-content">
+    <!-- Text -->
+    <div style="color:white;">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span style="font-size:0.875rem;font-weight:500;color:#ddb448;">Admissions Open 2024–25</span>
+      </div>
+      <h1 class="hero-title">Top One Percentile <span style="color:#ddb448;">(TOP)</span></h1>
+      <p class="hero-subtitle">Your One-Stop Destination for Academic Excellence. Expert coaching for JEE, NEET, NTSE, KVPY and Board Exams with personalized mentoring.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+        <a href="programs.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:#c9a84c;color:#0d1f3c;font-weight:700;padding:1rem 2rem;border-radius:0.75rem;box-shadow:0 0 20px rgba(201,168,76,0.3);transition:all 0.25s;font-size:1rem;">
+          Explore Courses
+          <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+        <a href="contact.html" style="display:inline-flex;align-items:center;gap:0.5rem;border:2px solid rgba(255,255,255,0.4);color:white;font-weight:600;padding:1rem 2rem;border-radius:0.75rem;transition:all 0.25s;font-size:1rem;backdrop-filter:blur(4px);">
+          Contact Us
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span style="color:#ddb448;font-size:1.1rem;">✓</span> Expert Mentoring</div>
+        <div class="hero-trust-item"><span style="color:#ddb448;font-size:1.1rem;">✓</span> Small Batches</div>
+        <div class="hero-trust-item"><span style="color:#ddb448;font-size:1.1rem;">✓</span> Proven Results</div>
+      </div>
+    </div>
+    <!-- Illustration -->
+    <div class="hero-illustration">
+      <div class="hero-card">
+        <div style="font-size:5rem;margin-bottom:1rem;">🎓</div>
+        <div style="color:rgba(255,255,255,0.8);font-size:1rem;font-weight:600;margin-bottom:1.5rem;">Academic Excellence</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1.5rem;">
+          <div style="background:rgba(255,255,255,0.1);border-radius:0.75rem;padding:0.75rem;">
+            <div style="color:#ddb448;font-size:1.25rem;font-weight:800;">500+</div>
+            <div style="color:rgba(255,255,255,0.6);font-size:0.7rem;">Students</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:0.75rem;padding:0.75rem;">
+            <div style="color:#ddb448;font-size:1.25rem;font-weight:800;">8+</div>
+            <div style="color:rgba(255,255,255,0.6);font-size:0.7rem;">Years Exp.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:0.75rem;padding:0.75rem;">
+            <div style="color:#ddb448;font-size:1.25rem;font-weight:800;">150+</div>
+            <div style="color:rgba(255,255,255,0.6);font-size:0.7rem;">Successes</div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:center;gap:1rem;">
+          <div style="width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;font-size:1.4rem;" title="Physics">⚛️</div>
+          <div style="width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;font-size:1.4rem;" title="Chemistry">🧪</div>
+          <div style="width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;font-size:1.4rem;" title="Mathematics">📐</div>
+          <div style="width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;font-size:1.4rem;" title="Biology">🌿</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:5rem;display:block;">
+      <path d="M0 80L1440 80L1440 30C1200 80 960 0 720 30C480 60 240 0 0 30L0 80Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ── STATISTICS ── -->
+<section class="stats-section">
+  <div class="container">
+    <div class="grid-4" style="gap:1.5rem;">
+      <div class="stat-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;transition:transform 0.2s;">👩‍🎓</div>
+        <div style="font-size:2.25rem;font-weight:900;color:#1a3a6b;">
+          <span class="counter-num" data-target="500">0</span><span style="color:#1a3a6b;">+</span>
+        </div>
+        <div style="color:#6b7280;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;">Students Trained</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">📅</div>
+        <div style="font-size:2.25rem;font-weight:900;color:#1a3a6b;">
+          <span class="counter-num" data-target="8">0</span><span>+</span>
+        </div>
+        <div style="color:#6b7280;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;">Years of Experience</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏅</div>
+        <div style="font-size:2.25rem;font-weight:900;color:#1a3a6b;">
+          <span class="counter-num" data-target="150">0</span><span>+</span>
+        </div>
+        <div style="color:#6b7280;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;">Success Stories</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">📚</div>
+        <div style="font-size:2.25rem;font-weight:900;color:#1a3a6b;">
+          <span class="counter-num" data-target="5">0</span>
+        </div>
+        <div style="color:#6b7280;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-top:0.25rem;">Courses Offered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about-section">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:center;">
+      <!-- Image -->
+      <div style="order:2;" id="about-img-col">
+        <div class="about-img-placeholder">
+          <div style="position:absolute;top:-1.25rem;right:-1.25rem;width:5rem;height:5rem;background:#ddb448;border-radius:1rem;rotate:12deg;opacity:.2;"></div>
+          <div style="position:absolute;bottom:-1.25rem;left:-1.25rem;width:4rem;height:4rem;background:#4e81cc;border-radius:1rem;rotate:-12deg;opacity:.2;"></div>
+          <div style="font-size:4.5rem;margin-bottom:1.5rem;">🏫</div>
+          <p style="color:#1a3a6b;font-weight:600;font-size:1.1rem;margin-bottom:1rem;">Top One Percentile Institute</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;">
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Concept-Based Learning</div>
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Individual Attention</div>
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Small Batch Sizes</div>
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Regular Assessments</div>
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Personalized Mentoring</div>
+            <div style="background:rgba(255,255,255,0.8);border-radius:0.75rem;padding:0.75rem;font-size:0.75rem;color:#1a3a6b;font-weight:500;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Long-Term Success</div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div style="order:1;">
+        <div class="section-badge">About TOP</div>
+        <h2 class="section-title">About Top One Percentile</h2>
+        <p style="color:#2b5fbc;font-size:1rem;font-weight:500;margin-bottom:1rem;">Where Potential Meets Excellence</p>
+        <p style="color:#4b5563;line-height:1.8;margin-bottom:2rem;font-size:1.0625rem;">
+          Top One Percentile (TOP) is a premier coaching institute dedicated to transforming students into top achievers. Founded with a vision to bridge the gap between school academics and competitive exam preparation, we offer a unique blend of concept-based learning and personalized mentoring.<br><br>
+          At TOP, every student receives individual attention in small batch sizes, ensuring no one is left behind. Our regular assessments, doubt-clearing sessions, and parent update meetings create a holistic ecosystem for academic success.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:2rem;">
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Concept-Based Learning</span></div>
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Individual Attention</span></div>
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Small Batch Sizes</span></div>
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Regular Assessments</span></div>
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Personalized Mentoring</span></div>
+          <div class="highlight-item"><span style="color:#c9a84c;font-weight:700;font-size:1.1rem;">✓</span><span style="color:#374151;font-size:0.9rem;font-weight:500;">Long-Term Success</span></div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="programs.html" class="btn-primary">Explore Programs</a>
+          <a href="contact.html" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section class="why-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem;">
+      <div class="section-badge" style="display:inline-flex;">Why Choose Us</div>
+      <h2 class="section-title">Why Top One Percentile?</h2>
+      <p style="color:#6b7280;max-width:40rem;margin:0 auto;font-size:1.0625rem;">We don't just teach — we mentor, motivate, and transform students into top achievers.</p>
+    </div>
+    <div class="grid-4" style="gap:1.5rem;">
+      <div class="feature-card"><div class="feature-card-icon">👨‍🏫</div><h3 class="feature-card-title">Experienced Faculty</h3><p class="feature-card-desc">Learn from a highly qualified educator with years of experience in competitive exam coaching and school academics.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🎯</div><h3 class="feature-card-title">Personalized Mentoring</h3><p class="feature-card-desc">Every student gets individual attention and a customized learning plan tailored to their strengths and weaknesses.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">👥</div><h3 class="feature-card-title">Small Batch Sizes</h3><p class="feature-card-desc">Carefully curated small batches ensure focused teaching and more interaction time for every student.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">📝</div><h3 class="feature-card-title">Regular Mock Tests</h3><p class="feature-card-desc">Systematic mock tests and chapter-wise assessments help track progress and build exam-day confidence.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">💬</div><h3 class="feature-card-title">Doubt Clearing Sessions</h3><p class="feature-card-desc">Dedicated doubt-clearing sessions ensure concepts are rock-solid before moving to the next topic.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">📊</div><h3 class="feature-card-title">Performance Tracking</h3><p class="feature-card-desc">Detailed performance analytics help students and parents understand progress and areas for improvement.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">👨‍👩‍👧</div><h3 class="feature-card-title">Parent Updates</h3><p class="feature-card-desc">Regular parent-teacher meetings and progress reports keep families informed and involved in the journey.</p></div>
+      <div class="feature-card"><div class="feature-card-icon">🏆</div><h3 class="feature-card-title">High Success Rate</h3><p class="feature-card-desc">Proven track record of students cracking top competitive exams and achieving excellent board results.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAMS PREVIEW ── -->
+<section class="programs-section">
+  <div class="programs-section-orb1"></div>
+  <div class="programs-section-orb2"></div>
+  <div class="container" style="position:relative;">
+    <div style="text-align:center;margin-bottom:3.5rem;">
+      <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:999px;padding:0.375rem 1rem;color:#ddb448;font-size:0.875rem;font-weight:500;margin-bottom:1rem;">📚 Our Programs</div>
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:white;margin-bottom:1rem;">Comprehensive Exam Preparation</h2>
+      <p style="color:rgba(255,255,255,0.7);max-width:40rem;margin:0 auto;font-size:1.0625rem;">From school board exams to India's most competitive entrance tests — we cover it all.</p>
+    </div>
+    <div class="grid-5" style="gap:1rem;">
+      <a href="programs.html#board" class="prog-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">📋</div>
+        <h3 style="color:white;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">Board Exams</h3>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.5;">Class 10 &amp; 12 Board Exam Preparation</p>
+      </a>
+      <a href="programs.html#jee" class="prog-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🔬</div>
+        <h3 style="color:white;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">JEE Main &amp; Advanced</h3>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.5;">Engineering entrance exam coaching</p>
+      </a>
+      <a href="programs.html#neet" class="prog-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🩺</div>
+        <h3 style="color:white;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">NEET</h3>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.5;">Medical entrance exam preparation</p>
+      </a>
+      <a href="programs.html#ntse" class="prog-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏅</div>
+        <h3 style="color:white;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">NTSE</h3>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.5;">National scholarship talent search</p>
+      </a>
+      <a href="programs.html#kvpy" class="prog-card">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🔭</div>
+        <h3 style="color:white;font-weight:700;font-size:1rem;margin-bottom:0.5rem;">KVPY / Foundation</h3>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.5;">Scientific aptitude &amp; olympiad training</p>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="programs.html" class="btn-gold">
+        View All Programs
+        <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testi-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <div class="section-badge" style="display:inline-flex;">Student Success</div>
+      <h2 class="section-title">What Our Students Say</h2>
+      <p style="color:#6b7280;max-width:36rem;margin:0 auto;">Real results. Real stories. From students who trusted TOP.</p>
+    </div>
+    <div id="testimonials-carousel" style="position:relative;max-width:48rem;margin:0 auto;">
+      <div style="overflow:hidden;border-radius:1rem;">
+        <div class="carousel-track">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card" style="text-align:left;max-width:42rem;margin:0 auto;">
+              <div style="display:flex;gap:0.25rem;margin-bottom:1rem;"><span style="color:#ddb448;font-size:1.25rem;">★★★★★</span></div>
+              <blockquote style="color:#374151;font-size:1.0625rem;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"TOP Institute completely transformed my JEE preparation. The concept-based approach and personalized mentoring made all the difference. I cleared JEE Advanced in my first attempt and got into IIT!"</blockquote>
+              <div style="display:flex;align-items:center;gap:1rem;">
+                <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#4e81cc,#1a3a6b);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;border:2px solid #ddb448;">A</div>
+                <div>
+                  <div style="font-weight:700;color:#111827;">Arjun Sharma</div>
+                  <div style="color:#1a3a6b;font-size:0.875rem;font-weight:600;">JEE Advanced 2023</div>
+                  <div style="color:#b08a30;font-size:0.8rem;font-weight:500;">AIR 892</div>
+                  <div style="color:#9ca3af;font-size:0.75rem;">2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card" style="text-align:left;max-width:42rem;margin:0 auto;">
+              <div style="display:flex;gap:0.25rem;margin-bottom:1rem;"><span style="color:#ddb448;font-size:1.25rem;">★★★★★</span></div>
+              <blockquote style="color:#374151;font-size:1.0625rem;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"The NEET preparation at TOP was exceptional. The NCERT focus and mock test series built my confidence. I scored 680/720 and secured admission to my dream medical college!"</blockquote>
+              <div style="display:flex;align-items:center;gap:1rem;">
+                <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#4e81cc,#1a3a6b);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;border:2px solid #ddb448;">P</div>
+                <div>
+                  <div style="font-weight:700;color:#111827;">Priya Nair</div>
+                  <div style="color:#1a3a6b;font-size:0.875rem;font-weight:600;">NEET 2023</div>
+                  <div style="color:#b08a30;font-size:0.8rem;font-weight:500;">Score: 680/720</div>
+                  <div style="color:#9ca3af;font-size:0.75rem;">2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card" style="text-align:left;max-width:42rem;margin:0 auto;">
+              <div style="display:flex;gap:0.25rem;margin-bottom:1rem;"><span style="color:#ddb448;font-size:1.25rem;">★★★★★</span></div>
+              <blockquote style="color:#374151;font-size:1.0625rem;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"The small batch size meant I got individual attention every class. My doubts were addressed immediately. The weekly tests really helped me track my progress and stay motivated."</blockquote>
+              <div style="display:flex;align-items:center;gap:1rem;">
+                <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#4e81cc,#1a3a6b);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;border:2px solid #ddb448;">K</div>
+                <div>
+                  <div style="font-weight:700;color:#111827;">Karthik Menon</div>
+                  <div style="color:#1a3a6b;font-size:0.875rem;font-weight:600;">JEE Main 2024</div>
+                  <div style="color:#b08a30;font-size:0.8rem;font-weight:500;">99.2 Percentile</div>
+                  <div style="color:#9ca3af;font-size:0.75rem;">2024</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <button class="carousel-prev" style="position:absolute;left:-1.5rem;top:50%;transform:translateY(-50%);width:3rem;height:3rem;background:white;border:none;border-radius:50%;box-shadow:var(--shadow-card);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#1a3a6b;" aria-label="Previous">
+        <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="carousel-next" style="position:absolute;right:-1.5rem;top:50%;transform:translateY(-50%);width:3rem;height:3rem;background:white;border:none;border-radius:50%;box-shadow:var(--shadow-card);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#1a3a6b;" aria-label="Next">
+        <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <!-- Dots -->
+      <div style="display:flex;justify-content:center;gap:0.5rem;margin-top:2rem;">
+        <button class="carousel-dot" style="height:0.5rem;border-radius:999px;border:none;cursor:pointer;transition:all 0.3s;background:#d1d5db;width:0.5rem;"></button>
+        <button class="carousel-dot" style="height:0.5rem;border-radius:999px;border:none;cursor:pointer;transition:all 0.3s;background:#d1d5db;width:0.5rem;"></button>
+        <button class="carousel-dot" style="height:0.5rem;border-radius:999px;border:none;cursor:pointer;transition:all 0.3s;background:#d1d5db;width:0.5rem;"></button>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="reviews.html" class="btn-outline">View All Reviews →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box" style="max-width:52rem;margin:0 auto;">
+      <div class="cta-box-orb1"></div>
+      <div class="cta-box-orb2"></div>
+      <div style="position:relative;">
+        <div style="font-size:3rem;margin-bottom:1rem;">🚀</div>
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;color:white;margin-bottom:1rem;">Ready to Join the <span style="color:#ddb448;">Top One Percentile</span>?</h2>
+        <p style="color:rgba(255,255,255,0.8);font-size:1.0625rem;margin-bottom:2rem;max-width:36rem;margin-left:auto;margin-right:auto;">Limited seats available. Secure your spot today and start your journey toward academic excellence.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;">
+          <a href="contact.html" class="btn-gold" style="font-size:1rem;padding:1rem 2rem;">Enquire Now — Free Consultation</a>
+          <a href="programs.html" style="display:inline-flex;align-items:center;border:2px solid rgba(255,255,255,0.4);color:white;font-weight:600;padding:1rem 2rem;border-radius:0.75rem;transition:all 0.25s;font-size:1rem;">Browse Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer style="background:#0d1f3c;color:white;">
+  <div class="container" style="padding-top:4rem;padding-bottom:4rem;">
+    <div style="display:grid;grid-template-columns:1fr;gap:2.5rem;" id="footer-grid">
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;text-decoration:none;">
+          <div style="width:3rem;height:3rem;border-radius:0.75rem;background:linear-gradient(135deg,#c9a84c,#b08a30);display:flex;align-items:center;justify-content:center;">
+            <span style="color:#0d1f3c;font-weight:900;font-size:1.25rem;">T</span>
+          </div>
+          <div>
+            <div style="font-weight:900;font-size:1.25rem;color:white;">TOP</div>
+            <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);font-weight:500;letter-spacing:0.08em;text-transform:uppercase;">Top One Percentile</div>
+          </div>
+        </a>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.875rem;line-height:1.7;margin-bottom:1.5rem;">Your One-Stop Destination for Academic Excellence.</p>
+        <div style="display:flex;gap:0.75rem;">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul style="list-style:none;space-y:0.625rem;">
+          <li style="margin-bottom:0.625rem;"><a href="index.html" class="footer-link">Home</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html" class="footer-link">Programs</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="faculty.html" class="footer-link">Faculty</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="reviews.html" class="footer-link">Alumni Reviews</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="faq.html" class="footer-link">FAQ</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Programs -->
+      <div>
+        <h3 class="footer-heading">Our Programs</h3>
+        <ul style="list-style:none;">
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#board" class="footer-link">Board Exam Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#jee" class="footer-link">JEE Main &amp; Advanced</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#neet" class="footer-link">NEET Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#ntse" class="footer-link">NTSE Preparation</a></li>
+          <li style="margin-bottom:0.625rem;"><a href="programs.html#kvpy" class="footer-link">KVPY / Foundation</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h3 class="footer-heading">Contact Us</h3>
+        <ul style="list-style:none;">
+          <li style="display:flex;gap:0.75rem;margin-bottom:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;margin-top:0.1rem;">📍</span><span>Please update your address via the Admin panel. City, State, PIN Code.</span></li>
+          <li style="margin-bottom:0.75rem;"><a href="tel:+917550022197" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">📞</span><span>+91 75500 22197</span></a></li>
+          <li style="margin-bottom:0.75rem;"><a href="mailto:toponepercentile@gmail.com" style="display:flex;gap:0.75rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'"><span style="color:#c9a84c;flex-shrink:0;">✉️</span><span>toponepercentile@gmail.com</span></a></li>
+          <li style="display:flex;gap:0.75rem;margin-bottom:1rem;color:rgba(255,255,255,0.6);font-size:0.875rem;"><span style="color:#c9a84c;flex-shrink:0;">🕐</span><span>Monday to Saturday: 7:00 AM – 9:00 PM</span></li>
+        </ul>
+        <a href="https://wa.me/917550022197" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;background:#16a34a;color:white;font-size:0.875rem;font-weight:600;padding:0.625rem 1rem;border-radius:0.5rem;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#15803d'" onmouseout="this.style.background='#16a34a'">
+          <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.848L.057 23.882l6.197-1.625A11.937 11.937 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.83 9.83 0 0 1-5.012-1.37l-.36-.213-3.68.965.982-3.585-.234-.371A9.846 9.846 0 0 1 2.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.08);">
+    <div class="container" style="padding-top:1.25rem;padding-bottom:1.25rem;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:0.75rem;">
+      <p style="color:rgba(255,255,255,0.4);font-size:0.875rem;">© 2025 Top One Percentile. All rights reserved.</p>
+      <p style="color:rgba(255,255,255,0.3);font-size:0.75rem;">Empowering students to reach the <span style="color:#c9a84c;font-weight:600;">Top One Percentile</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/917550022197" target="_blank" rel="noopener" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;width:3.5rem;height:3.5rem;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(22,163,74,0.4);transition:all 0.25s;" onmouseover="this.style.background='#15803d';this.style.transform='scale(1.1)'" onmouseout="this.style.background='#16a34a';this.style.transform='scale(1)'" aria-label="Chat on WhatsApp">
+  <svg style="width:1.75rem;height:1.75rem;" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.848L.057 23.882l6.197-1.625A11.937 11.937 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.83 9.83 0 0 1-5.012-1.37l-.36-.213-3.68.965.982-3.585-.234-.371A9.846 9.846 0 0 1 2.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+</a>
+
+<!-- Back to Top -->
+<button id="back-to-top" style="position:fixed;bottom:1.5rem;left:1.5rem;z-index:50;width:3rem;height:3rem;background:#1a3a6b;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(26,58,107,0.3);cursor:pointer;color:white;" aria-label="Back to top">
+  <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<!-- Footer responsive grid -->
+<style>
+  @media (min-width: 768px) { #footer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { #footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.5fr; } }
+  @media (min-width: 640px) { #footer-grid > div:last-child > div > p:last-child, .footer-bottom { flex-direction: row; } }
+</style>
+
+<script src="js/main.js"></script>
+</body>
+</html>
