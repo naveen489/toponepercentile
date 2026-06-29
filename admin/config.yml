@@ -1,9 +1,28 @@
+# Use DecapBridge PKCE auth (required)
 backend:
-  name: github
+  name: git-gateway
   repo: naveen489/toponepercentile
   branch: main
-  use_pkce: true
-  app_id: Ov23lieE3Kz9x6hDpmBG
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/16b926c8-8d41-47f1-b5ce-72d521c3be24/pkce
+  auth_token_endpoint: /sites/16b926c8-8d41-47f1-b5ce-72d521c3be24/token
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://toponepercentile.com
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
