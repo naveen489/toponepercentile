@@ -28,28 +28,50 @@ media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 collections:
+  - name: "contact"
+    label: "Contact Info"
+    files:
+      - file: "content/contact.json"
+        label: "Contact Info"
+        name: "contact"
+        format: "json"
+        fields:
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "WhatsApp Number (digits only with country code)", name: "whatsapp", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Working Hours", name: "working_hours", widget: "string"}
+          - {label: "Google Maps Embed URL", name: "map_url", widget: "string", required: false}
+
   - name: "homepage"
     label: "Homepage"
     files:
       - file: "content/homepage.json"
         label: "Homepage Settings"
         name: "homepage"
+        format: "json"
         fields:
-          - {label: "Hero Section", name: "hero", widget: "object", fields: [
-              {label: "Title", name: "title", widget: "string"},
-              {label: "Subtitle", name: "subtitle", widget: "text"},
-              {label: "CTA Text", name: "cta_text", widget: "string"},
-              {label: "CTA URL", name: "cta_url", widget: "string"}
-            ]}
-          - {label: "Statistics", name: "stats", widget: "list", fields: [
-              {label: "Value", name: "value", widget: "string"},
-              {label: "Label", name: "label", widget: "string"}
-            ]}
-          - {label: "Why Choose Us Cards", name: "why_choose_us", widget: "list", fields: [
-              {label: "Icon (Emoji)", name: "icon", widget: "string"},
-              {label: "Title", name: "title", widget: "string"},
-              {label: "Description", name: "description", widget: "text"}
-            ]}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+              - {label: "CTA Button Text", name: "cta_text", widget: "string"}
+              - {label: "CTA Button URL", name: "cta_url", widget: "string"}
+          - label: "Statistics"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Value", name: "value", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+          - label: "Why Choose Us Cards"
+            name: "why_choose_us"
+            widget: "list"
+            fields:
+              - {label: "Icon (Emoji)", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
 
   - name: "about"
     label: "About Section"
@@ -57,33 +79,12 @@ collections:
       - file: "content/about.json"
         label: "About Settings"
         name: "about"
+        format: "json"
         fields:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Mission", name: "mission", widget: "text"}
           - {label: "Vision", name: "vision", widget: "text"}
-
-  - name: "programs"
-    label: "Programs"
-    files:
-      - file: "content/programs.json"
-        label: "Programs List"
-        name: "programs"
-        fields:
-          - label: "Programs"
-            name: "programs"
-            widget: "list"
-            fields:
-              - {label: "ID (No spaces, lowercase)", name: "id", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Icon (Emoji)", name: "icon", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - {label: "Eligibility", name: "eligibility", widget: "text"}
-              - {label: "Features", name: "features", widget: "list", fields: [
-                  {label: "Icon (Emoji)", name: "icon", widget: "string"},
-                  {label: "Title", name: "title", widget: "string"}
-                ]}
-              - {label: "CTA Text", name: "cta_text", widget: "string", default: "Enquire Now"}
 
   - name: "faculty"
     label: "Faculty Profile"
@@ -91,16 +92,48 @@ collections:
       - file: "content/faculty.json"
         label: "Faculty Details"
         name: "faculty"
+        format: "json"
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Designation", name: "designation", widget: "string"}
           - {label: "Qualification", name: "qualification", widget: "string"}
           - {label: "Experience", name: "experience", widget: "string"}
           - {label: "Photo", name: "photo", widget: "image", required: false}
-          - {label: "Expertise Tags", name: "expertise", widget: "list", field: {label: "Tag", name: "tag", widget: "string"}}
+          - label: "Expertise Tags"
+            name: "expertise"
+            widget: "list"
+            field: {label: "Tag", name: "tag", widget: "string"}
           - {label: "Biography", name: "biography", widget: "text"}
           - {label: "Teaching Philosophy", name: "philosophy", widget: "text"}
-          - {label: "Achievements", name: "achievements", widget: "list", field: {label: "Achievement", name: "item", widget: "string"}}
+          - label: "Achievements"
+            name: "achievements"
+            widget: "list"
+            field: {label: "Achievement", name: "item", widget: "string"}
+
+  - name: "programs"
+    label: "Programs"
+    files:
+      - file: "content/programs.json"
+        label: "Programs List"
+        name: "programs"
+        format: "json"
+        fields:
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            fields:
+              - {label: "ID (lowercase, no spaces)", name: "id", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon (Emoji)", name: "icon", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Eligibility", name: "eligibility", widget: "text"}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - {label: "Icon (Emoji)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+              - {label: "CTA Button Text", name: "cta_text", widget: "string", default: "Enquire Now"}
 
   - name: "testimonials"
     label: "Testimonials"
@@ -108,6 +141,7 @@ collections:
       - file: "content/testimonials.json"
         label: "Testimonials List"
         name: "testimonials"
+        format: "json"
         fields:
           - label: "Testimonials"
             name: "testimonials"
@@ -116,7 +150,7 @@ collections:
               - {label: "Student Name", name: "name", widget: "string"}
               - {label: "Exam / Batch", name: "exam", widget: "string"}
               - {label: "Year", name: "year", widget: "string"}
-              - {label: "Rating (1-5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, default: 5}
+              - {label: "Rating (1–5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, default: 5}
               - {label: "Review", name: "review", widget: "text"}
 
   - name: "faq"
@@ -125,6 +159,7 @@ collections:
       - file: "content/faq.json"
         label: "FAQ List"
         name: "faqs"
+        format: "json"
         fields:
           - label: "FAQs"
             name: "faqs"
@@ -132,17 +167,3 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
-
-  - name: "contact"
-    label: "Contact Info"
-    files:
-      - file: "content/contact.json"
-        label: "Contact Info"
-        name: "contact"
-        fields:
-          - {label: "Address", name: "address", widget: "text"}
-          - {label: "Phone Number", name: "phone", widget: "string"}
-          - {label: "WhatsApp Number (Digits only with country code)", name: "whatsapp", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Working Hours", name: "working_hours", widget: "string"}
-          - {label: "Google Maps Embed URL", name: "map_url", widget: "string", required: false}
